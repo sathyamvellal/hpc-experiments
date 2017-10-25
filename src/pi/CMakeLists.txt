@@ -9,3 +9,4 @@ endfunction(create_add_library)
 
 create_add_library(pi_seq)
 create_add_library(pi_openmp)
+create_add_library(pi_mpi)

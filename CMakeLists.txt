@@ -17,11 +17,9 @@ include_directories(${PROJECT_INCLUDE_DIR})
 include_directories(${PROJECT_SOURCE_DIR})
 include_directories(${COMMON_INCLUDE_DIR})
 
-find_package(OpenMP)
-if (OPENMP_FOUND)
-    set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
-    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
-endif()
+include_directories(/usr/local/Cellar/open-mpi/2.1.1/include)
+link_directories(/usr/local/opt/libevent/lib)
+link_directories(/usr/local/Cellar/open-mpi/2.1.1/lib)
 
 # Common code, packaged as a library
 add_subdirectory(common)

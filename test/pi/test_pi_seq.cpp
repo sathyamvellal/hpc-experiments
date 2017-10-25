@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
     clock_t time_end = clock();
 
     std::cout << "PI: " << std::setprecision(15) << PI << std::endl;
-    std::cout << "CPU: " << std::setprecision(10) << (double)(time_end - time_begin)/(1000000.0) << std::endl;
+    std::cout << "CPU: " << std::setprecision(10) << (double)(time_end - time_begin)/(CLOCKS_PER_SEC) << std::endl;
 
     return 0;
 }
