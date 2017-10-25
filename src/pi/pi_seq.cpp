@@ -6,7 +6,6 @@
 
 
 double pi() {
-    const long int N = 1000l * 1000l * 1000l * 10l;
     const double step = 1.0 / N;
 
     double x;
