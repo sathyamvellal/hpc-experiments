@@ -3,8 +3,9 @@ project(${CMAKE_PROJECT_NAME}-pi)
 
 set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-set(PI_SEQ_SRC
-        pi_seq.cpp)
+function(create_add_library name)
+    add_library(${name} STATIC ${name}.cpp)
+endfunction(create_add_library)
 
-add_library(${PROJECT_NAME} STATIC
-        ${PI_SEQ_SRC})
+create_add_library(pi_seq)
+create_add_library(pi_openmp)

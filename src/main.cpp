@@ -6,7 +6,7 @@
 #include <iomanip>
 
 #include "hello.h"
-#include "pi/pi_seq.h"
+#include "pi/pi.h"
 
 int main(int argc, char **argv) {
     hello();

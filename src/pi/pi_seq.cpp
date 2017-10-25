@@ -2,7 +2,7 @@
 // Created by Sathyam Vellal on 24/10/2017.
 //
 
-#include "pi/pi_seq.h"
+#include "pi/pi.h"
 
 
 double pi() {
