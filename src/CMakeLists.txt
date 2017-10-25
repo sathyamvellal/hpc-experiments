@@ -8,8 +8,5 @@ set(MAIN_SRC
 
 add_executable(${CMAKE_PROJECT_NAME} ${MAIN_SRC})
 target_link_libraries(${CMAKE_PROJECT_NAME}
-        #${CMAKE_BINARY_DIR}/lib${CMAKE_PROJECT_NAME}-common.a
-        #${CMAKE_BINARY_DIR}/lib${CMAKE_PROJECT_NAME}-pi.a
         ${CMAKE_PROJECT_NAME}-common
-        ${CMAKE_PROJECT_NAME}-pi
-        )
+        ${CMAKE_PROJECT_NAME}-pi)
