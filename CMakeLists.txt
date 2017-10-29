@@ -25,7 +25,7 @@ link_directories(/usr/local/Cellar/open-mpi/2.1.1/lib)
 add_subdirectory(common)
 
 # Sub-projects, packaged as libraries
-add_subdirectory(src/pi)
+add_subdirectory(src)
 
 # Tests for Sub-projects, as execiutables
 add_subdirectory(test)

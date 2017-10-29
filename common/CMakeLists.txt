@@ -8,3 +8,4 @@ set(HELLO_SRC
 
 add_library(common STATIC
         ${HELLO_SRC})
+add_library(util STATIC src/util.cpp)
