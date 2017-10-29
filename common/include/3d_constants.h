@@ -1,0 +1,10 @@
+//
+// Created by Sathyam Vellal on 27/10/2017.
+//
+
+#ifndef HPC_EXPERIMENTS_3D_CONSTANTS_H
+#define HPC_EXPERIMENTS_3D_CONSTANTS_H
+
+enum DIMENS { X, Y, Z, NUM_DIMENS };
+
+#endif //HPC_EXPERIMENTS_3D_CONSTANTS_H
