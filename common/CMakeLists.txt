@@ -9,3 +9,4 @@ set(HELLO_SRC
 add_library(common STATIC
         ${HELLO_SRC})
 add_library(util STATIC src/util.cpp)
+add_library(random STATIC src/random.cpp)
