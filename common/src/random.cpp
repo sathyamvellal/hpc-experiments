@@ -9,11 +9,11 @@ double rand_seed = 13597.0;
 
 double norm_rand()
 {
-    random_seed = dmod(random_seed * RAND_MUL, MAX_INT);
-    return (random_seed / MAX_INT);
+    rand_seed = dmod(rand_seed * RAND_MUL, MAX_INT);
+    return (rand_seed / MAX_INT);
 }
 
 void seed_rand(double seed)
 {
-    random_seed = seed;
+    rand_seed = seed;
 }
