@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-#include "md/md.h"
+#include "md3/md.h"
 #include "util.h"
 
 int main(int argc, char **argv) {
