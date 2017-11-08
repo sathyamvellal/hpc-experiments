@@ -5,15 +5,15 @@
 #ifndef HPC_EXPERIMENTS_MD_H
 #define HPC_EXPERIMENTS_MD_H
 
-#include "md/md_constants.h"
-#include "3d_constants.h"
+#include "3d.h"
+#include "constants.h"
 
 const int NMAX = 100000;
 
 struct Atom {
-    double r[NUM_DIMENS];
-    double v[NUM_DIMENS];
-    double a[NUM_DIMENS];
+    double r[NDIM];
+    double v[NDIM];
+    double a[NDIM];
 };
 
 struct System {
