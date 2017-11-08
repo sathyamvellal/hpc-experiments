@@ -4,9 +4,14 @@
 
 #include "util.h"
 
-double dmod(double num, double mod) {
+double dmod(double num, double mod)
+{
     int a;
     a = (int) (num/mod);
     return (num - mod * a);
 }
 
+double signr(double val, double x)
+{
+    return (x > 0.0) ? val : -val;
+}
