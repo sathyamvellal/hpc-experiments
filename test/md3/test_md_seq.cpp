@@ -4,15 +4,21 @@
 
 #include <iostream>
 
-#include "md3/md.h"
 #include "util.h"
+#include "3d.h"
+#include "md3/md.h"
 
 int main(int argc, char **argv) {
     Simulation simulation;
 
-    simulation.init();
+    simulation.init_ucell[X] = simulation.init_ucell[Y] = simulation.init_ucell[Z] = 4;
+    simulation.density = 0.8;
+    simulation.init_temp = 1.0;
+    simulation.delta_t = 0.005;
+    simulation.num_steps = 10;
+    simulation.step_avg = 11;
 
-    std::cout << simulation.system.atoms[0].r[X] << std::endl;
+    simulation.init();
 
     return 0;
 }
