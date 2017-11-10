@@ -7,6 +7,7 @@
 #include "util.h"
 #include "3d.h"
 #include "md3/md.h"
+#include <ctime>
 
 int main(int argc, char **argv) {
     Simulation simulation;
@@ -19,6 +20,11 @@ int main(int argc, char **argv) {
     simulation.step_avg = 11;
 
     simulation.init();
+    simulation.compute_accel();
+
+    simulation.run();
+
+    std::cout << "Execution time (s) = " << simulation.exec_time << std::endl;
 
     return 0;
 }

@@ -29,6 +29,8 @@ public:
 class Simulation {
 public:
     System system;
+    Atom *atoms;
+
     int init_ucell[NDIM];
     int num_atoms;
     double density;
@@ -40,9 +42,14 @@ public:
     double region_half[NDIM];
     double halfdelta_t;
     double Uc, Duc;
-    double step;
+    double exec_time;
 
     void init();
+    void compute_accel();
+    void apply_boundary_condition();
+    void half_kick();
+    void single_step();
+    void run();
 private:
     void init_region();
     void init_UcDuc();
