@@ -11,7 +11,9 @@ double dmod(double num, double mod)
     return (num - mod * a);
 }
 
+#if 0
 double signr(double val, double x)
 {
     return (x > 0.0) ? val : -val;
 }
+#endif
