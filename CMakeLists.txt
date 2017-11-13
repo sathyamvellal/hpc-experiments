@@ -30,3 +30,8 @@ add_subdirectory(src)
 
 # Tests for Sub-projects, as execiutables
 add_subdirectory(test)
+
+file(GLOB PUBLIC_HEADERS
+        "include/*"
+        "common/include/*")
+file(COPY ${PUBLIC_HEADERS} DESTINATION ${PROJECT_BINARY_DIR}/include/hpc/)
