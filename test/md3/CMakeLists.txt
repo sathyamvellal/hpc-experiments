@@ -3,9 +3,9 @@ project(${CMAKE_PROJECT_NAME}-test-pi)
 
 set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-function(create_add_executable suffix)
-    add_executable(test_${suffix} test_${suffix}.cpp)
-    target_link_libraries(test_${suffix} -lm ${CMAKE_PROJECT_NAME}-util ${CMAKE_PROJECT_NAME}-random3 ${suffix} ${ARGV1})
+function(create_add_executable prefix name)
+    add_executable(test-${prefix}-${name} test-${name}.cpp)
+    target_link_libraries(test-${prefix}-${name} ${prefix}-${name} hpc-util hpc-random3 hpc-common ${ARGV2})
 endfunction(create_add_executable)
 
-create_add_executable(md_seq)
+create_add_executable(md3 md_seq)
